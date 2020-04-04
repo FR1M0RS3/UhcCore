@@ -14,9 +14,9 @@ public class GoneFishingListener extends ScenarioListener{
     @EventHandler
     public void onGameStarted(UhcStartedEvent e){
         ItemStack rod = new ItemStack(Material.FISHING_ROD);
-        rod.addEnchantment(Enchantment.LURE, 3);
-        rod.addEnchantment(Enchantment.LUCK, 3);
-        rod.addEnchantment(Enchantment.DURABILITY, 3);
+        rod.addEnchantment(Enchantment.LURE, 7);
+        rod.addEnchantment(Enchantment.LUCK, 250);
+        rod.addEnchantment(Enchantment.DURABILITY, 250);
 
         for (UhcPlayer uhcPlayer : e.getPlayersManager().getOnlinePlayingPlayers()){
             try {
